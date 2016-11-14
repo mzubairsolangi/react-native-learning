@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Comment from './Comment';
 
+// Comment props object.
+const comment = {
+      title:"Component with props object",
+      date: new Date(),
+      message: 'I hope you enjoy learning React!',
+      author: {
+        name: 'Hello MobileLIVE',
+        avatarUrl: 'http://www.mobilelive.ca/wp-content/uploads/2015/01/logo3.png'
+      }
+    }
+    
 
 class App extends Component {
   render() {
@@ -11,10 +23,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <h3>Component with props example.</h3>
-        <p className="App-intro">
-          Hello, {this.props.message}
-        </p>
+        <Comment
+          title= {comment.title}
+          date={comment.date}
+          message={comment.message}
+          author={comment.author} />,
       </div>
     );
   }
