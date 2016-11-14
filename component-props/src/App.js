@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Comment from './Comment';
+import Clock from './clock';
 
 // Comment props object.
 const comment = {
-      title:"Component with props object",
+      title:"Component with 'props' object",
       date: new Date(),
       message: 'I hope you enjoy learning React!',
       author: {
-        name: 'Hello MobileLIVE',
         avatarUrl: 'http://www.mobilelive.ca/wp-content/uploads/2015/01/logo3.png'
       }
     }
@@ -28,6 +28,7 @@ class App extends Component {
           date={comment.date}
           message={comment.message}
           author={comment.author} />,
+          <Clock />
       </div>
     );
   }
