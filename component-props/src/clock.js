@@ -46,3 +46,16 @@ export default CLock;
 // We also want to clear that timer whenever the DOM produced by the Clock is removed. This is called "unmounting" in React.
 // componentDidMount(),  componentWillUnmount() //These methods are called "lifecycle hooks".
 // The componentDidMount() hook runs after the component output has been rendered to the DOM. 
+// There are three things you should know about setState()
+    // Do Not Modify State Directly - 
+            // Wrong- this.state.comment = 'Hello'; // Correct -this.setState({comment: 'Hello'});
+    // State Updates May Be Asynchronous - 
+            // Wrong  
+            // this.setState({
+            // counter: this.state.counter + this.props.increment,
+            // });
+            // Correct
+            // this.setState((prevState, props) => ({
+            // counter: prevState.counter + props.increment
+            // }));
+    // State Updates are Merged  - When you call setState(), React merges the object you provide into the current state.
