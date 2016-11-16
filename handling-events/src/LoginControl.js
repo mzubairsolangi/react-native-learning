@@ -24,23 +24,23 @@ class LoginControl  extends Component {
     this.setState({isLoggedIn: false});
   }
 
-    render() {
-        const isLoggedIn = this.state.isLoggedIn;
+  render() {
+      const isLoggedIn = this.state.isLoggedIn;
 
-        let button = null;
-        if (isLoggedIn) {
-        button = <LogoutButton  onClick={this.handleLogoutClick} />;
-        } else {
-        button = <LoginButton onClick={this.handleLoginClick} />;
-        }
+      let button = null;
+      if (isLoggedIn) {
+      button = <LogoutButton  onClick={this.handleLogoutClick} />;
+      } else {
+      button = <LoginButton onClick={this.handleLoginClick} />;
+      }
 
-      return (
-            <div>
-            {button}
-              <Greeting isLoggedIn={isLoggedIn} />
-            </div>
-          );
-    }
+    return (
+          <div>
+          {button}
+            <Greeting isLoggedIn={isLoggedIn} />
+          </div>
+        );
+  }
 }
 
 // this method will return dashboard component.
@@ -57,13 +57,11 @@ function GuestGreeting(props) {
                 <FormControl type="email" placeholder="Email" />
               </Col>
             </FormGroup>
-
             <FormGroup controlId="formHorizontalPassword">
               <Col sm={12}>
                 <FormControl type="password" placeholder="Password" />
               </Col>
             </FormGroup>
-            
             <FormGroup>
               <Col sm={12}>
                 <Button type="button">
@@ -76,7 +74,6 @@ function GuestGreeting(props) {
 
 // This method will return component based on condition.
 function Greeting(props) {
-   console.log(props)
   const isLoggedIn = props.isLoggedIn;
   if (isLoggedIn) {
     return <UserGreeting />;

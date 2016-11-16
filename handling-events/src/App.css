@@ -34,7 +34,7 @@ button {
   width: 200px;
 }
 .warning {
-  background-color: yellow;
+  background-color: orange;
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -44,7 +44,12 @@ button {
 .list-group{
   text-align: left
 }
-
+.panel.panel-default {
+  text-align: left
+}
+.show-grid {
+  margin: 0 !important;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

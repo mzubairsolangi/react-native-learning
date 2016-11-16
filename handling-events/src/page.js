@@ -28,7 +28,7 @@ class Page  extends Component {
   }
 }
 
-// Warning banner component method which return DOM element.
+// this is the warning component which will show hide based on condition.
 function WarningBanner(props) {
   if (!props.warn) {
     return null;

@@ -40,3 +40,7 @@ function MessagesList(props) {
 }
 
 export default Mailbox;
+
+// Keys help React identify which items have changed, are added, or are removed.
+// React don't recommend using indexes for keys if the items can reorder.
+// A good rule of thumb is that elements inside the map() call need keys.

@@ -1,3 +1,12 @@
+In this example we will learn about: 
+
+```
+Handling Events, 
+Conditional Rendering - Inline If with Logical && Operator , Inline If-Else with Conditional Operator , Preventing Component from Rendering.
+Lists and Keys - Rendering Multiple Components, Basic List Component, Keys , Keys Must Only Be Unique Among Siblings.
+```
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 # Getting start:
