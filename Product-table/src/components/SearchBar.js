@@ -19,7 +19,7 @@ handleChange() {
      <form>
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Search product"
           value={this.props.filterText}
           ref="filterTextInput"
           onChange={this.handleChange}
