@@ -17,6 +17,22 @@
 .App-intro {
   font-size: large;
 }
+.table-conatainer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form input[type=text] {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 1px 0 0 8px;
+}
+table td {
+    text-align: left;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

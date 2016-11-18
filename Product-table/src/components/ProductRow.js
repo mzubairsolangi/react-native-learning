@@ -2,20 +2,21 @@ import React, { Component } from 'react';
 
 class ProductRow extends Component {
 
-constructor (props){
-    super(props)
-}
+  constructor (props){
+      super(props)
+  }
 
   render() {
+      var name = this.props.product.stocked ?
+      this.props.product.name :
+      <span style={{color: 'red'}}>
+        {this.props.product.name}
+      </span>;
      return (
-      <form>
-        <input type="text" placeholder="Search..." />
-        <p>
-          <input type="checkbox" />
-          {' '}
-          Only show products in stock
-        </p>
-      </form>
+       <tr>
+        <td>{name}</td>
+        <td>{this.props.product.price}</td>
+      </tr>
     );
   }
 }
